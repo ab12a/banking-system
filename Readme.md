@@ -25,7 +25,7 @@ BankingSystem/
 │
 ├── accounts.json            # Store account details in JSON format
 ├── transactions.csv         # Log all transactions in CSV format
-├── encryption.enc           # Store encrypted sensitive data (if applicable)
+├── accounts.enc             # Store encrypted sensitive data
 ├── banking_system.py        # Main Python script
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore file for Python-related exclusions
@@ -55,13 +55,13 @@ BankingSystem/
 The project relies on structured data files for essential operations:
 
 - **`accounts.json`**:  
-  Stores account details, such as account numbers, names, and hashed passwords, in a structured JSON format.
+  Storing account details, such as account numbers, names, and hashed passwords, in a structured JSON format.
 
 - **`transactions.csv`**:  
   Logs all banking transactions (deposits and withdrawals) along with timestamps for accountability and transaction tracking.
 
-- **`encryption.enc`**:  
-  Used for securely storing encrypted sensitive data, if applicable.
+- **`accounts.enc`**:  
+  It is used for securely storing encrypted sensitive data, if applicable.
 
 ### Handling Data Files
 - If sensitive data is included in these files, exclude them from version control by adding their names to the `.gitignore` file.
